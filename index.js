@@ -45,6 +45,9 @@ mongoose
     
   })
   .then((response) => {
+    return Recipe.findOneAndDelete({title: "Carrot Cake"})
+  })
+  .then((response) => {
     console.log(response);
   })
   .catch(error => {
