@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const recipeSchema = new Schema({
-  tile: {
+  title: {
     type: String,
     required: true,
     unique: true
@@ -31,7 +31,7 @@ const recipeSchema = new Schema({
   creator: String,
   created: {
     type: Date,
-    default: "today"
+    default: Date.now
   }
   
 });
