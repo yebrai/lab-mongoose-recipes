@@ -33,7 +33,7 @@ const recipeSchema = new Schema({
     type: Date,
     default: "today"
   }
-
+  
 });
 
 const Recipe = mongoose.model('Recipe', recipeSchema);
